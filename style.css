@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a; /* Cor de fundo mais escura */
+    color: #fff; /* Texto em branco */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.start-menu, .difficulty-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.difficulty-menu {
+    display: none;
+}
+
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    background-color: #333; 
+    overflow: hidden;
+    display: none;
+    border-radius: 10px; 
+    margin-top: 100px; 
+}
+
+.letter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    color: #fff; 
+    user-select: none; /* Impede a seleção de texto */
+}
+
+#score {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+}
+
+button {
+    background-color: #1a73e8; /* Cor do botão */
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+button:hover {
+    background-color: #0e45b7; /* Cor do botão quando o mouse está sobre ele */
+}
+
+#game-over-screen{
+    margin-top: 100px; 
+}
+
+
+.credits {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    display: none; 
+    list-style: none;
+}
+
+.credits ul{
+    list-style: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Digitação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" class="start-menu">
+        <h1>Jogo de Digitação</h1>
+        <p>Clique em "Iniciar" para começar o jogo</p>
+        <button onclick="showDifficultyOptions()">Iniciar</button>
+        <button onclick="showCredits()">Créditos</button>
+    </div>
+
+    <div id="difficulty-options" class="difficulty-menu" style="display: none;">
+        <h2>Escolha uma dificuldade</h2>
+        <button onclick="startGame('easy')">Fácil</button>
+        <button onclick="startGame('medium')">Médio</button>
+        <button onclick="startGame('hard')">Difícil</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <p id="score">Pontuação: 0</p>
+    </div>   
+
+    <div id="game-over-screen" style="display: none;">
+        <h1>Você perdeu!</h1>
+        <p id="player-info"></p>
+        <button id="restart-button" onclick="restartGame()">Reiniciar</button>
+    </div>
+
+    <div id="credits-screen" class="credits" style="display: none;">
+        <h2>Créditos</h2>
+        <p>Projeto de Extensão à Comunidade</p>
+        <p>Este jogo foi desenvolvido por alunos da Universidade Geraldo Di Biase:</p>
+        <ul>
+            <li>Felipe R. G. do Nascimento</li>
+            <li>Iury Escano Cordeiro</li>
+            <li>Jean da Costa Silva</li>
+            <li>João Vitor Eleutério de Sousa</li>
+            <li>Valério Filho</li>
+        </ul>
+        <button id="back-button" onclick="showMainMenu()">Voltar</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
