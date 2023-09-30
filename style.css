@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #0a0a0a; /* Cor de fundo mais escura */
-    color: #fff; /* Texto em branco */
+    background-color: #0a0a0a;
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ body {
 }
 
 button {
-    background-color: #1a73e8; /* Cor do botão */
+    background-color: #1a73e8; 
     color: #fff;
     font-size: 18px;
     padding: 10px 20px;
@@ -58,11 +58,11 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transição de cor suave */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0e45b7; /* Cor do botão quando o mouse está sobre ele */
+    background-color: #0e45b7;
 }
 
 #game-over-screen{
