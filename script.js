@@ -31,7 +31,7 @@ const highScores = []; //Armazena no array a pontuação dos jogadores
             speed = 2;
         }
     
-        errors = 0; // Reinicie a contagem de erros
+        errors = 0; // Reinicia a contagem de erros
     
         const difficultyOptions = document.getElementById("difficulty-options");
         const gameContainer = document.getElementById("game-container");
@@ -40,7 +40,7 @@ const highScores = []; //Armazena no array a pontuação dos jogadores
         gameContainer.style.display = "block";
     
         score = 0;
-        updateScore(); // Chame a função updateScore aqui
+        updateScore(); //Contabilização dos pontos
         gameInterval = setInterval(createLetter, 1000);
     }
 
@@ -66,7 +66,6 @@ const highScores = []; //Armazena no array a pontuação dos jogadores
     }
     
     function restartGame() {
-        // Use location.reload() para recarregar a página
         location.reload();
     }      
 
