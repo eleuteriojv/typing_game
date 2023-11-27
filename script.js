@@ -67,24 +67,21 @@ const highScores = []; //Armazena no array a pontuação dos jogadores
       creditsScreen.style.display = "block";
     }
 
-    function showMainMenu() {
-      const creditsScreen = document.getElementById("credits-screen");
-      const menu = document.getElementById("menu");
-      const gameContainer = document.getElementById("game-container");
-      const gameOver = document.getElementById("game-over-screen")
-  
-      // Pausa o jogo
-      isGamePaused = false;
-  
-      // Oculta o botão "Voltar"
-      document.getElementById("back-to-menu").style.display = "none";
-  
-      // Oculta a tela de créditos e exibe o menu principal
-      creditsScreen.style.display = "none";
-      gameContainer.style.display = "none";
-      menu.style.display = "block";
-      gameOver.style.display = "none";
-  }
+    //   function showMainMenu() {
+    //     const creditsScreen = document.getElementById("credits-screen");
+    //     const menu = document.getElementById("menu");
+    //     const gameContainer = document.getElementById("game-container");
+    //     const gameOver = document.getElementById("game-over-screen")
+    
+    //     // Pausa o jogo
+    //     isGamePaused = false;
+    
+    //     // Oculta a tela de créditos e exibe o menu principal
+    //     creditsScreen.style.display = "none";
+    //     gameContainer.style.display = "none";
+    //     menu.style.display = "block";
+    //     gameOver.style.display = "none";
+    // }
     
     function restartGame() {
         location.reload();
