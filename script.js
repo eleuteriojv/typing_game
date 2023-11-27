@@ -42,8 +42,7 @@ const highScores = []; //Armazena no array a pontuação dos jogadores
       gameContainer.style.display = "block";
       gameOver.style.display = "none";
   
-      // Exibe o botão "Voltar" ao iniciar o jogo
-      document.getElementById("back-to-menu").style.display = "block";
+
   
       isGamePaused = false;
       score = 0;
@@ -54,6 +53,7 @@ const highScores = []; //Armazena no array a pontuação dos jogadores
           }
       }, 1000);
   }
+  
 
     function showCredits() {
       const creditsScreen = document.getElementById("credits-screen");
@@ -74,7 +74,7 @@ const highScores = []; //Armazena no array a pontuação dos jogadores
       const gameOver = document.getElementById("game-over-screen")
   
       // Pausa o jogo
-      isGamePaused = true;
+      isGamePaused = false;
   
       // Oculta o botão "Voltar"
       document.getElementById("back-to-menu").style.display = "none";
